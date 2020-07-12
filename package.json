@@ -1,0 +1,29 @@
+{
+  "name": "nice-pivot",
+  "version": "1.0.0",
+  "description": "Simple yet powerfull pivoting tool. It groups an array of objects by specified properties. Nested multi-level grouping is supported, as well as other nice features - read the manual.",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "dist/test.js",
+    "build": "tsc",
+    "prepare": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fedor-pavlov/nice-pivot.git"
+  },
+  "keywords": [
+    "array",
+    "groupby",
+    "pivot"
+  ],
+  "author": "Fedor Pavlov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fedor-pavlov/nice-pivot/issues"
+  },
+  "homepage": "https://github.com/fedor-pavlov/nice-pivot#readme",
+  "devDependencies": {
+    "typescript": "^3.9.6"
+  }
+}

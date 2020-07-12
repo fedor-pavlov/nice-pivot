@@ -1,1 +1,2 @@
 # nice-pivot
+`Simple yet powerfull pivoting tool. It groups an array of objects by specified properties. Nested multi-level grouping is supported, as well as other nice features (please read this manual to discover all of them).`
