@@ -1,6 +1,6 @@
 {
   "name": "nice-pivot",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Simple yet powerfull pivoting tool. It groups an array of objects by specified properties. Nested multi-level grouping is supported, as well as other nice features - read the manual.",
   "main": "dist/index.js",
   "scripts": {

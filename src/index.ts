@@ -228,7 +228,7 @@ function pivot_parse(arr:Array<any>, ...protos: any[]) {
         case 'object':
             if (proto instanceof Map) {
 
-                [...proto.keys()].forEach(k => buckets.push([(i:any) => i[k], proto.get(k)]))
+                [...proto.keys()].forEach(k => buckets.push([ typeof k === 'function' ? k : (i:any) => i[k], proto.get(k)]))
             }
             else {
 
@@ -268,4 +268,16 @@ export function pivot(inputArray:Array<any>, ...groupBy: GroupBy[]) {
     }
 
     return pivot_parse(inputArray, ...groupBy);
+}
+
+
+
+
+
+export function groupBy(key_function: (i: any) => any, value_descriptor: any): Map<(i: any) => any, any> {
+
+    let m = new Map()
+        m.set(key_function, value_descriptor)
+
+    return m
 }
