@@ -255,7 +255,7 @@ function pivot_parse(arr:Array<any>, ...protos: any[]) {
 
 export function pivot(inputArray:Array<any>, ...groupBy: GroupBy[]) {
 
-    groupBy = groupBy.filter(i => i || i === 0 || i === false).filter(i => typeof i !== 'object' || Object.keys(i).length > 0 )
+    groupBy = groupBy.filter(i => i || i === 0 || i === false).filter(i => typeof i !== 'object' || (i instanceof Map && i.size > 0) || Object.keys(i).length > 0 )
 
     if (groupBy.length < 1) {
 
